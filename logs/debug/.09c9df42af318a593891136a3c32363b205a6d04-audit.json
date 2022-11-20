@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/logs/debug/.09c9df42af318a593891136a3c32363b205a6d04-audit.json",
+    "files": [
+        {
+            "date": 1668923387641,
+            "name": "/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/logs/debug/2022-11-20.log",
+            "hash": "9f0894d118dd82ba5e2a2116fabe1e6746fdcde0b8bf16dc06c361f473acc36e"
+        }
+    ],
+    "hashType": "sha256"
+}

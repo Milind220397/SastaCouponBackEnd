@@ -1,15 +1,12 @@
 const mysql = require('mysql');
-const url = 'mongodb://localhost:27017';
-//const connection = new MongoClient(url);
-const dbName = 'sastacoupon';
-var result1;
-async function dbConnect(res) {
+require('dotenv').config();
+const dbConnect = async () => {
   
   const db = mysql.createConnection({
-    host: 'sastacoupon.c5lcdzbaqcbr.ap-northeast-1.rds.amazonaws.com',
-    user: 'admin',
-    password: 'sastacoupon123',
-    database: 'sastacoupon'
+    host: process.env.HOST,
+    user: process.env.USERNAME,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE
   })
   
   
