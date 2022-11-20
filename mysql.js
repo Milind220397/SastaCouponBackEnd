@@ -1,4 +1,5 @@
 const mysql = require('mysql');
+const logger = require('./src/utils/logger');
 require('dotenv').config();
 const dbConnect = async () => {
   
@@ -12,20 +13,15 @@ const dbConnect = async () => {
   
   db.connect((err) => {
       if (err) {
-        console.log(err);
+        logger.info(err);
       } else {
-        console.log("MYSQL CONNECTED")
+        logger.info("MYSQL CONNECTED")
       }
-      db.query(sql, [user_id], function (err, result, fields) {
-          if (err) {
-            console.log(err);
-          }
-          console.log('Executed Successfully');
-          result1 = result;
-         
-        });
-    })
-
+  });
   
+  return db;
 }
-module.exports = dbConnect;
+
+const db = dbConnect();
+
+module.exports = db;

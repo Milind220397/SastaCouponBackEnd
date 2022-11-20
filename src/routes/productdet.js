@@ -2,7 +2,6 @@ const express = require("express");
 const mysql = require('mysql');
 const router = express.Router();
 require("dotenv").config();
-const dbConnect = require('../../mysql');
 
 router.get("/", async (req, res) => {
     let user_id = req.params.id;

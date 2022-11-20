@@ -5,6 +5,7 @@ const AuthService = require("../services/AuthService")
 
 const logIn = (req, res) => {
     const result = AuthService.login(req.body.email, req.body.password);
+    res.end();
 };
 
 const signUp = (req,res) => {

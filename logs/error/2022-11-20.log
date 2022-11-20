@@ -1,108 +1,96 @@
-2022-11-20 11:19:47 error: uncaughtException: Cannot find module './routes/profile'
-Error: Cannot find module './routes/profile'
-    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
-    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
-    at Module.require (internal/modules/cjs/loader.js:636:17)
-    at require (internal/modules/cjs/helpers.js:20:18)
-    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:14:17)
-    at Module._compile (internal/modules/cjs/loader.js:688:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
-    at Module.load (internal/modules/cjs/loader.js:598:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
-2022-11-20 11:20:41 error: uncaughtException: Cannot find module './routes/profile'
-Error: Cannot find module './routes/profile'
-    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
-    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
-    at Module.require (internal/modules/cjs/loader.js:636:17)
-    at require (internal/modules/cjs/helpers.js:20:18)
-    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:14:17)
-    at Module._compile (internal/modules/cjs/loader.js:688:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
-    at Module.load (internal/modules/cjs/loader.js:598:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
-2022-11-20 11:20:52 error: uncaughtException: Cannot find module './routes/profile'
-Error: Cannot find module './routes/profile'
-    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
-    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
-    at Module.require (internal/modules/cjs/loader.js:636:17)
-    at require (internal/modules/cjs/helpers.js:20:18)
-    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:14:17)
-    at Module._compile (internal/modules/cjs/loader.js:688:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
-    at Module.load (internal/modules/cjs/loader.js:598:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
-2022-11-20 11:21:10 error: uncaughtException: Cannot find module './routes/profile'
-Error: Cannot find module './routes/profile'
-    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
-    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
-    at Module.require (internal/modules/cjs/loader.js:636:17)
-    at require (internal/modules/cjs/helpers.js:20:18)
-    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:14:17)
-    at Module._compile (internal/modules/cjs/loader.js:688:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
-    at Module.load (internal/modules/cjs/loader.js:598:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
-2022-11-20 11:21:42 error: uncaughtException: Cannot find module './routes/profile'
-Error: Cannot find module './routes/profile'
-    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
-    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
-    at Module.require (internal/modules/cjs/loader.js:636:17)
-    at require (internal/modules/cjs/helpers.js:20:18)
-    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:14:17)
-    at Module._compile (internal/modules/cjs/loader.js:688:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
-    at Module.load (internal/modules/cjs/loader.js:598:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
-2022-11-20 11:23:33 error: uncaughtException: Cannot find module './routes/profile'
-Error: Cannot find module './routes/profile'
-    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
-    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
-    at Module.require (internal/modules/cjs/loader.js:636:17)
-    at require (internal/modules/cjs/helpers.js:20:18)
-    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:14:17)
-    at Module._compile (internal/modules/cjs/loader.js:688:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
-    at Module.load (internal/modules/cjs/loader.js:598:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
-2022-11-20 11:24:15 error: uncaughtException: Cannot find module './routes/profile'
-Error: Cannot find module './routes/profile'
-    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
-    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
-    at Module.require (internal/modules/cjs/loader.js:636:17)
-    at require (internal/modules/cjs/helpers.js:20:18)
-    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:14:17)
-    at Module._compile (internal/modules/cjs/loader.js:688:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
-    at Module.load (internal/modules/cjs/loader.js:598:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
-2022-11-20 11:24:38 error: uncaughtException: Cannot find module './routes/profile'
-Error: Cannot find module './routes/profile'
-    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
-    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
-    at Module.require (internal/modules/cjs/loader.js:636:17)
-    at require (internal/modules/cjs/helpers.js:20:18)
-    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:14:17)
-    at Module._compile (internal/modules/cjs/loader.js:688:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
-    at Module.load (internal/modules/cjs/loader.js:598:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
-2022-11-20 11:24:48 error: uncaughtException: Cannot find module './routes/profile'
-Error: Cannot find module './routes/profile'
-    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
-    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
-    at Module.require (internal/modules/cjs/loader.js:636:17)
-    at require (internal/modules/cjs/helpers.js:20:18)
-    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:14:17)
-    at Module._compile (internal/modules/cjs/loader.js:688:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
-    at Module.load (internal/modules/cjs/loader.js:598:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+2022-11-20 23:28:51 error: uncaughtException: Cannot find module '../mysql'
+Require stack:
+- /Users/hasma00/Documents/Pesto/SastaCouponBackEnd/src/routes/profile.js
+- /Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js
+Error: Cannot find module '../mysql'
+Require stack:
+- /Users/hasma00/Documents/Pesto/SastaCouponBackEnd/src/routes/profile.js
+- /Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:999:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/src/routes/profile.js:5:19)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:999:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2022-11-20 23:29:11 error: uncaughtException: AuthRoutes is not defined
+ReferenceError: AuthRoutes is not defined
+    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:21:14)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2022-11-20 23:30:03 error: uncaughtException: Cannot find module './routes/AuthRoutes'
+Require stack:
+- /Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js
+Error: Cannot find module './routes/AuthRoutes'
+Require stack:
+- /Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:999:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:10:20)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2022-11-20 23:30:23 error: uncaughtException: Cannot find module './src/routesAuthRoutes'
+Require stack:
+- /Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js
+Error: Cannot find module './src/routesAuthRoutes'
+Require stack:
+- /Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:999:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:10:20)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2022-11-20 23:31:47 error: uncaughtException: AuthRoutes is not defined
+ReferenceError: AuthRoutes is not defined
+    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:21:14)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2022-11-20 23:33:00 error: uncaughtException: AuthRoutes is not defined
+ReferenceError: AuthRoutes is not defined
+    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:21:14)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2022-11-20 23:34:19 error: uncaughtException: AuthRoutes is not defined
+ReferenceError: AuthRoutes is not defined
+    at Object.<anonymous> (/Users/hasma00/Documents/Pesto/SastaCouponBackEnd/index.js:21:14)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
