@@ -1,7 +1,7 @@
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const logger = require('./src/utils/logger');
 require('dotenv').config();
-const dbConnect = async () => {
+const dbConnect = () => {
   
   const db = mysql.createConnection({
     host: process.env.HOST,
