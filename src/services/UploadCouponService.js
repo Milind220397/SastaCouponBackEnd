@@ -28,4 +28,4 @@ const getAllImagesAndOccasion = async () => {
 //     }
 // }
 
-module.exports = {getAllImagesAndOccasion, validateAndUploadCoupon}
+module.exports = {getAllImagesAndOccasion} // , validateAndUploadCoupon}
