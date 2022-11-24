@@ -5,10 +5,14 @@ const dbConnect = () => {
   console.log("Inside Mysql");
   const db = mysql.createConnection({
     host: process.env.HOST,
-    user: process.env.USERNAME,
+    user: 'admin',
     password: process.env.PASSWORD,
     database: process.env.DATABASE
-  })
+  });
+
+  console.log(process.env.USERNAME);
+
+//  console.log(db);
   
   
   db.connect((err) => {

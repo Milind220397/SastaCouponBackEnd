@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require("express");
 const cors = require('cors')
-const dbConnect = require('./mysql');
+// const dbConnect = require('./mysql');
 const app = express();
 const shortid = require('shortid')
 const Razorpay = require('razorpay')
@@ -15,7 +15,7 @@ const  proddetRoutes  = require('./src/routes/productdetRoutes');
 const  profileRoutes   = require('./src/routes/profileRoutes');
 
 app.use(require('cookie-parser')());
-require('./mysql');
+// require('./mysql');
 app.use(cors())
 app.use(express.json())
 

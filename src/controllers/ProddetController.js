@@ -3,6 +3,7 @@ const shortid = require('shortid')
 const Razorpay = require('razorpay')
 const mysql = require('mysql');
 const logger = require('../utils/logger')
+const db = require('../../mysql');
 
 const razorpay = new Razorpay({
     key_id: 'rzp_test_NpKUjWehxc13rP',
@@ -40,17 +41,15 @@ const verification = (req, res) => {
 
     console.log("inside verifuy");
     let user_id = req.query.id;
-   // const name = req.body.name.trim().split(/\s+/);
-      // console.log(name[0]);
     var result1;
     var sql = 'INSERT INTO ORDER_DETAILS (ORDER_ID,COUPON_ID,STATUS,BUYER_ID,TRANSACTION_TYPE,PAYMENT_TIMESTAMP,PAYMENT_ID)VALUES ?';
 
-    const db = mysql.createConnection({
-        host: 'sastacoupon.c5lcdzbaqcbr.ap-northeast-1.rds.amazonaws.com',
-        user: 'admin',
-        password: 'sastacoupon123',
-        database: 'sastacoupon'
-    })
+    // const db = mysql.createConnection({
+    //     host: 'sastacoupon.c5lcdzbaqcbr.ap-northeast-1.rds.amazonaws.com',
+    //     user: 'admin',
+    //     password: 'sastacoupon123',
+    //     database: 'sastacoupon'
+    // })
 
     const secret = 'sastacoupon123'
     console.log(req.body)
@@ -68,12 +67,12 @@ const verification = (req, res) => {
         var values = [
             [res_verify.order_id, '1234', res_verify.status, user_id, 'Bought', res_verify.created_at,res_verify.id]
         ];
-        db.connect((err) => {
-            if (err) {
-                console.log(err);
-            } else {
-                console.log("MYSQL CONNECTED")
-            }
+        // db.connect((err) => {
+        //     if (err) {
+        //         console.log(err);
+        //     } else {
+        //         console.log("MYSQL CONNECTED")
+        //     }
             db.query(sql, [values], function (err, result, fields) {
                 if (err) {
                     console.log(err);
@@ -91,7 +90,7 @@ const verification = (req, res) => {
                 }
             });
 
-        })
+       // })
 
 
     } else {
