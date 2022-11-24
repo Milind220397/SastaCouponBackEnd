@@ -65,11 +65,13 @@ const profile_get = async (req, res) => {
 
 
 const profile_post = (req, res) => {
-    let user_id = req.query.id;
+    
 
     const obj = req.body;
+    let user_id = obj.id;
     
     console.log(obj);
+    console.log(user_id)
     var result1;
     var sql = 'UPDATE USERS SET FIRST_NAME = ?, LAST_NAME = ?,  CONTACT = ? WHERE ID = ?';
     var sql1 = 'UPDATE ADDRESS SET STREET = ?, CITY = ?,  STATE = ?, COUNTRY = ?, ZIPCODE = ? WHERE ID = ?';
@@ -119,7 +121,7 @@ const profile_post = (req, res) => {
       }
       else {
         console.log("" + JSON.stringify(result));
-       //  res.send(JSON.stringify(result.affectedRows));
+        res.send(JSON.stringify(result.affectedRows));
         console.log("Address Updated")
       }
     });//Second Query End

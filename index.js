@@ -19,13 +19,6 @@ require('./mysql');
 app.use(cors())
 app.use(express.json())
 
-
-// const profile = require('./src/routes/profile');
-// const productdet = require('./src/routes/productdet')
-// const payment = require('./routes/payment');
-// app.use('/profile', profile);
-// app.use('/productdet', productdet);
-// app.use('/razorpay', payment);
 app.use('/', AuthRoutes);
 app.use('/', uploadCouponRoutes);
 app.use('/', proddetRoutes);
