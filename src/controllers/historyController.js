@@ -26,7 +26,7 @@ var sql = 'SELECT * FROM ORDER_DETAILS  WHERE BUYER_ID = ?';
         }
         else {
             logger.info("Response of Product details:" + JSON.stringify(result));
-            res.send(result);
+            res.status(200).json(JSON.stringify(result));
         }
     });
  

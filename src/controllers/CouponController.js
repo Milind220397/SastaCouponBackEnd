@@ -31,20 +31,22 @@ const uploadCoupon = (req, res) => {
 
 const fetchRecentCoupons = async (req, res) => {
     let couponArray;
-    try {
-        memcache.get(memcache.generateKey('recent-coupon'), async (err, val) => {
-            if(err) return null;
-            couponArray = JSON.parse(val);
-            if(!couponArray) {
-                couponArray = JSON.stringify(await couponService.getRecentCoupons());
-                memcache.set(memcache.generateKey('recent-coupon'), couponArray, 300);
-            } 
-            res.status(200).json(couponArray);
-        });
-    } catch (err) {
-        logger.error(err);
-        res.status(500).send();
-    }
+    couponArray = JSON.stringify(await couponService.getRecentCoupons());
+    res.status(200).json(couponArray);
+    // try {
+    //     memcache.get(memcache.generateKey('recent-coupon'), async (err, val) => {
+    //         if(err) return null;
+    //         couponArray = JSON.parse(val);
+    //         if(!couponArray) {
+    //             couponArray = JSON.stringify(await couponService.getRecentCoupons());
+    //             memcache.set(memcache.generateKey('recent-coupon'), couponArray, 300);
+    //         } 
+    //         res.status(200).json(couponArray);
+    //     });
+    // } catch (err) {
+    //     logger.error(err);
+    //     res.status(500).send();
+    // }
 } 
 
 const fetchCouponWithFilters = async (req, res) => {
