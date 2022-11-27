@@ -17,7 +17,7 @@ const payment = async (req, res) => {
     const amount = req.body.amount * 100;
     console.log(amount);
     const currency = 'INR';
-    var sql = 'INSERT INTO ORDER_DETAILS (ORDER_ID,COUPON_ID,STATUS,BUYER_ID,TRANSACTION_TYPE,PAYMENT_TIMESTAMP,PAYMENT_ID)VALUES ?';
+    var sql = 'INSERT INTO ORDER_DETAILS (ORDER_ID,COUPON_ID,STATUS,BUYER_ID,TRANSACTION_TYPE,PAYMENT_ID)VALUES ?';
     const options = {
         amount: amount,
         currency,
@@ -30,7 +30,7 @@ const payment = async (req, res) => {
         // Updateorder id in db 
 
         var values = [
-            [response.id, req.body.coupon_id, response.status, req.body.id, 'Bought', response.created_at,""]
+            [response.id, req.body.coupon_id, response.status, req.body.id, 'Bought',""]
         ];
       
             db.query(sql, [values], function (err, result, fields) {
@@ -66,7 +66,7 @@ const verification = (req, res) => {
     console.log("inside verifuy");
     let user_id = req.query.id;
     var result1;
-    var sql = 'UPDATE  ORDER_DETAILS SET  STATUS = ? ,PAYMENT_TIMESTAMP = ? ,PAYMENT_ID = ? WHERE ORDER_ID = ?';
+    var sql = 'UPDATE  ORDER_DETAILS SET  STATUS = ?  ,PAYMENT_ID = ? WHERE ORDER_ID = ?';
     
 
     const secret = 'sastacoupon123'
@@ -85,7 +85,7 @@ const verification = (req, res) => {
     // Verifying the Signature 
     if (digest === req.headers['x-razorpay-signature']) {
         console.log('Request is legit')
-            db.query(sql, [res_verify.status,res_verify.created_at,res_verify.id,res_verify.order_id], function (err, result, fields) {
+            db.query(sql, [res_verify.status,res_verify.id,res_verify.order_id], function (err, result, fields) {
                 if (err) {
                     console.log(err);
                 }

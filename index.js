@@ -13,9 +13,9 @@ const uploadCouponRoutes = require('./src/routes/UploadCouponRoutes');
 
 const  proddetRoutes  = require('./src/routes/productdetRoutes');
 const  profileRoutes   = require('./src/routes/profileRoutes');
+const  historyRoutes   = require('./src/routes/historyRoutes');
 
 app.use(require('cookie-parser')());
-// require('./mysql');
 app.use(cors())
 app.use(express.json())
 
@@ -23,6 +23,7 @@ app.use('/', AuthRoutes);
 app.use('/', uploadCouponRoutes);
 app.use('/', proddetRoutes);
 app.use('/', profileRoutes);
+app.use('/', historyRoutes);
 
 app.listen(PORT, () => {
   logger.info(`server running at 127.0.0.1:${PORT}`);
