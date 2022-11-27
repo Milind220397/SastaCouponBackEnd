@@ -10,8 +10,8 @@ const logIn = async (req, res) => {
     try {
         result = await authService.logIn(req.body.email, req.body.password);
         if(result) {
-            addJwtToken({ userId: result.userId, email: req.body.email}, res);
-            res.status(200).send();
+            const token = addJwtToken({ userId: result.userId, email: req.body.email}, res);
+            res.status(200).json({userId: result.userId, email: req.body.email,token: token});
         }
     } catch(err) {
         logger.error(err);
@@ -21,13 +21,13 @@ const logIn = async (req, res) => {
 
 const signUp = async (req,res) => {
     try {
-        await authService.signUp(req.body.email, req.body.password);
-        addJwtToken({email: req.body.email}, res);
-        res.status(200).send();
+        result = await authService.signUp(req.body.email, req.body.password);
+        const token = addJwtToken({email: req.body.email}, res);
+        res.status(200).json({userId: result.userId, email: req.body.email, token: token});
     } catch(err) {
         logger.error(err);
         res.status(500).send();
-    }
+    } 
 }
 
 const logout = (req, res) => {
@@ -44,7 +44,11 @@ const test = async (req, res) => {
 
 const addJwtToken = (user, res) => {
     const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET_KEY);
-    res.cookie('Authorization', accessToken);
+    let options = {
+        maxAge: 1000 * 60 * 15
+    } 
+    res.cookie('Authorization', accessToken, options);
+    return accessToken;
 }
 
 

@@ -26,7 +26,7 @@ const signUp = async (email, password) => {
             return await userRepo.insertUser(email, encryptedPassword)
             .then(data => {
                 if(data[0].affectedRows === 1) {
-                    return 'User Created';
+                    return {userId: data[0].insertId};
                 }
             }).catch(err => {
                 throw new Error(err);
